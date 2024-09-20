@@ -26,7 +26,7 @@ def draw_plot():
     result_2 = linregress(x_2,y_2)
     x_pred_2 = pd.Series([i for i in range(2000,2051)])
     y_pred_2 = result_2.slope * x_pred_2 + result_2.intercept
-    plt.plot(x_pred_2, y_pred_2, "r")
+    plt.plot(x_pred_2, y_pred_2, "green")
 
     # Add labels and title
     plt.title("Rise in Sea Level")
